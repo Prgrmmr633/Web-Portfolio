@@ -1,0 +1,188 @@
+body {
+    font-size: 28px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-items: end;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+@keyframes fading1 {
+    from { background-color: rgba(0, 0, 0, 0); color: black}
+    to { background-color: rgba(0, 0, 0, 1); color:#fec815}
+}
+
+@keyframes fading2 {
+    from { background-color: rgba(75, 145, 241, 0); color: white}
+    to { background-color: rgba(254, 200, 21, 1); color: black}
+}
+
+@keyframes fading3 {
+    from { background-color: rgba(0, 0, 0, 0); color: white}
+    to { background-color: rgba(0, 0, 0, 1); color:#fec815}
+}
+
+@keyframes fading4 {
+    from { background-color: rgba(75, 145, 241, 0); color: #fec815}
+    to { background-color: rgba(254, 200, 21, 1); color: black}
+}
+
+li a:hover {
+    animation: fading1 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+ol li a:hover {
+    animation: fading3 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+h1 strong:hover {
+    animation: fading2 1s;
+    animation-fill-mode: forwards;
+    background-color:#fec815;
+}
+
+p b:hover {
+    animation: fading4 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+p i:hover {
+    animation: fading4 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+p u:hover {
+    animation: fading4 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+h2 strong:hover {
+    animation: fading1 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+h3 strong:hover {
+    animation: fading3 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+h3 strong a:hover {
+    animation: fading1 1s;
+    animation-fill-mode: forwards;
+    background-color: #111;
+}
+
+.active {
+    background-color: #333;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.nav-items {
+    display: flex;
+    background-color: #fec815;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    justify-content: center;
+}
+
+.title-items {
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    text-align: center;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@font-face {
+    font-family: Proxima Nova;
+    src: url(proxima_nova.otf);
+}
+
+* {
+    font-family: Proxima Nova;
+    color: white;
+}
+
+.wrapper  {
+    width:100%;
+    height:550px;
+    background-color: #353535;
+    position:relative;
+}
+
+.container {
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    display:inline-block;
+    height:100%;
+    width:20%;
+    position:absolute;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.home-bg {
+    background-image: url(/Header_Bg.gif);
+    background-color: #141414;
+    align-items: center;
+    background-size: center;
+}
+
+button {
+    background-color: #fec815;
+    border: none;
+    border-radius: 10% / 20%;
+    color: #353535;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    text-decoration: none;
+  }
